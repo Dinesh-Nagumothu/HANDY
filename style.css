@@ -1,0 +1,198 @@
+#main-title {
+  font-size: 80px;
+}
+
+#main-title-x {
+  color: #ffa500;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 194, 1) 22%,
+    rgba(253, 187, 45, 1) 55%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#main-title-text {
+  background: linear-gradient(
+    90deg,
+    rgba(197, 61, 23, 1) 15%,
+    rgba(140, 52, 228, 1) 72%,
+    rgba(39, 209, 243, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #130f40;
+  font-family: "Lato" !important;
+  overflow: hidden;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#top-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#addNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(171, 206, 161, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.input-search {
+  height: 40px;
+  width: 40px;
+  border-style: none;
+  padding: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 30px;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus ~ .input-search,
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid #00aaff; /* Sky blue border */
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.white-text {
+  color: white;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  overflow-y: auto;
+}
+
+#tasks::-webkit-scrollbar {
+  width: 10px;
+}
+
+#tasks::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#tasks::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+#tasks div {
+  border: transparent;
+  background-color: #f7f1f1;
+  border-radius: 6px;
+  padding: 5px;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.taskname-error-msg,
+.creation-date-error-msg,
+.due-date-error-msg,
+.description-error-msg {
+  margin-left: 10px;
+}
+
+.increased-font-size {
+  font-size: 2rem;
+}
+
+.task-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.task {
+  margin-bottom: 10px;
+}

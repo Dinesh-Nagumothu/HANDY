@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "font-synthesis",
+          "width: fit-content",
+          "height: fit-content"
+        ]
+      }
+    ],
+    "no-inline-styles": "off",
+    "typescript-config/is-valid": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ]
+  }
+}
