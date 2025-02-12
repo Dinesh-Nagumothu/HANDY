@@ -7,7 +7,7 @@ Edit and Delete options for tasks
 Search bar to find tasks by title
 Data is stored in internal browser storage for persistence
 🚀 Built with React.js for a seamless user experience!
- ➜  Local:   http://localhost:5173/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
