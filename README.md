@@ -1,4 +1,4 @@
-X Notes 📝 a simple and efficient React application for task management. Users can create tasks with a title, description, and a specific time. If a task remains uncompleted for 24 hours, it turns red to indicate expiration.
+HANDY 📝 a simple and efficient React application for task management. Users can create tasks with a title, description, and a specific time. If a task remains uncompleted for 24 hours, it turns red to indicate expiration.
 
 ✨ Features:
 Add tasks with title and description
