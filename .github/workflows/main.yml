@@ -1,0 +1,22 @@
+name: Continuous Run
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  run-continuously:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run script
+        run: |
+          while true; do
+            echo "Running..."
+            sleep 300
+          done
